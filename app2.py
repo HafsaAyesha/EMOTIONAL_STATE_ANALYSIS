@@ -203,6 +203,8 @@ if 'features_df' in locals():  # Ensure that features_df is defined before plott
 
 
 app = Flask(__name__)
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8000)
 
 # Simulate the data (replace this with your actual data)
 def generate_mock_data():
